@@ -3,50 +3,101 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ova Corporation</title>
-<meta name="description" content="Ova Corporation – mobile games: Hopaboo: Bunny Runner Dash and Hopaboo 3D.">
-<style>
-  :root { --bg:#eaf6ff; --card:#ffffff; --ink:#1d2a3a; --muted:#5b6b7d; --accent:#ff8a1f; --accent2:#3aa0ff; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#0f1824; --card:#18263a; --ink:#e8f0fa; --muted:#9fb0c4; }
-  }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); line-height:1.5; }
-  header { text-align:center; padding:56px 16px 24px; }
-  h1 { margin:0; font-size:clamp(2rem,6vw,3rem); letter-spacing:-.02em; }
-  h1 span { color:var(--accent); }
-  header p { color:var(--muted); margin:8px 0 0; }
-  main { max-width:880px; margin:0 auto; padding:16px; display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
-  .card { background:var(--card); border-radius:20px; padding:24px; box-shadow:0 6px 24px rgba(0,0,0,.08); }
-  .card h2 { margin:0 0 6px; font-size:1.3rem; }
-  .card p { margin:0 0 16px; color:var(--muted); }
-  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; padding:10px 18px; border-radius:999px; }
-  .btn.blue { background:var(--accent2); }
-  footer { text-align:center; color:var(--muted); font-size:.9rem; padding:32px 16px 48px; }
-  footer a { color:inherit; }
-</style>
+<title>Ova Corporation – Software &amp; Game Development</title>
+<meta name="description" content="Ova Corporation designs, builds and ships mobile games, apps and web platforms. Makers of Hopaboo: Bunny Runner Dash and Hopaboo 3D.">
+<meta property="og:title" content="Ova Corporation">
+<meta property="og:description" content="Software &amp; game development studio. We build software people love to use.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/hopaboo3d-feature.jpg">
+<meta name="theme-color" content="#171717">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Poppins:wght@700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <h1>Ova <span>Corporation</span></h1>
-  <p>Fun, family-friendly mobile games · Suceava, Romania</p>
+<nav class="nav">
+  <a class="brand" href="./" aria-label="Ova Corporation home">
+    <svg viewBox="0 0 300 100" class="logo" role="img" aria-label="Ova Corporation"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb341"/><stop offset="1" stop-color="#ff6a1a"/></linearGradient></defs>
+      <path d="M42 8C59 8 70 34 70 56C70 78 57 92 42 92C27 92 14 78 14 56C14 34 25 8 42 8Z" fill="url(#lg)"/>
+      <path d="M33 37 L58 54 L33 71Z" fill="#fff" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+      <text x="88" y="60" font-family="Poppins,sans-serif" font-size="50" font-weight="800" letter-spacing="2" fill="currentColor">OVA</text>
+      <text x="90" y="86" font-family="Poppins,sans-serif" font-size="12.5" font-weight="700" letter-spacing="8.2" fill="#ff7a1a">CORPORATION</text></svg>
+  </a>
+  <div class="links"><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a class="navcta" href="#contact">Contact</a></div>
+</nav>
+
+<header class="hero">
+  <div class="hero-text">
+    <p class="kicker">Software &amp; game development studio</p>
+    <h1>We build software <em>people love to use.</em></h1>
+    <p class="lead">From mobile games to apps and web platforms, Ova Corporation designs, builds and ships digital products, end to end.</p>
+    <div class="ctas"><a class="cta" href="#contact">Start a project</a><a class="cta ghost" href="#work">See our work</a></div>
+  </div>
+  <div class="code" aria-hidden="true">
+    <div class="bar"><i></i><i></i><i></i><span>ova.config</span></div>
+<pre><span class="k">const</span> studio = {
+  name: <span class="s">"Ova Corporation"</span>,
+  builds: [<span class="s">"games"</span>, <span class="s">"apps"</span>, <span class="s">"web"</span>],
+  platforms: [<span class="s">"Android"</span>, <span class="s">"iOS"</span>, <span class="s">"Web"</span>],
+  languages: <span class="n">15</span>,
+  quality: <span class="s">"obsessive"</span>,
+};
+<span class="c">// ship it 🚀</span>
+studio.<span class="f">launch</span>();</pre>
+  </div>
 </header>
-<main>
-  <section class="card">
-    <h2>Hopaboo: Bunny Runner Dash</h2>
-    <p>Hop, dodge and collect coins with a cute bunny in this colorful 2D endless runner.</p>
-    <a class="btn" href="https://play.google.com/store/apps/details?id=com.ovacorporation.hopaboo">Google Play</a>
-  </section>
-  <section class="card">
-    <h2>Hopaboo 3D: Bunny Runner Dash</h2>
-    <p>Run through the farm in 3D, jump over tractors, grab power-ups and race your friends.</p>
-    <a class="btn blue" href="https://play.google.com/store/apps/details?id=com.ovacorporation.hopaboo3d">Google Play</a>
-  </section>
-</main>
-<footer>
-  <a href="https://claude.ai/artifact/VZE2kg8YjNBBFcfsXWWz4i">Privacy Policy</a> ·
-  <a href="https://claude.ai/artifact/G11zmEMr6D2eLBmfjJmyiy">Terms</a><br>
-  © 2026 Ova Corporation
+
+<section class="stats" aria-label="Key facts">
+  <div><b>2</b><span>games live on Google Play</span></div>
+  <div><b>15</b><span>languages supported</span></div>
+  <div><b>2D + 3D</b><span>real‑time graphics</span></div>
+  <div><b>100%</b><span>in‑house design &amp; code</span></div>
+</section>
+
+<section id="services" class="section">
+  <p class="eyebrow">What we do</p>
+  <h2>Services</h2>
+  <div class="grid">
+    <article class="svc"><span class="ic" aria-hidden="true">🎮</span><h3>Game development</h3><p>2D and 3D mobile games built with Godot: gameplay, graphics, monetization and online features.</p></article>
+    <article class="svc"><span class="ic" aria-hidden="true">📱</span><h3>Mobile apps</h3><p>Fast, polished Android apps, from first prototype to Google Play release and updates.</p></article>
+    <article class="svc"><span class="ic" aria-hidden="true">🌐</span><h3>Web &amp; backend</h3><p>Websites, dashboards and the APIs that power leaderboards, accounts and live features.</p></article>
+    <article class="svc"><span class="ic" aria-hidden="true">✏️</span><h3>UI/UX &amp; graphics</h3><p>Interfaces, icons, 3D models and store artwork that make a product feel great.</p></article>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <p class="eyebrow">Selected work</p>
+  <h2>Our products</h2>
+  <div class="items">
+    <a class="item" href="https://play.google.com/store/apps/details?id=com.ovacorporation.hopaboo3d" target="_blank" rel="noopener"><img src="img/hopaboo3d-feature.jpg" alt="Hopaboo 3D: Bunny Runner Dash" width="1024" height="500" loading="lazy"><div><h3>Hopaboo 3D: Bunny Runner Dash</h3><p>3D endless runner · Android</p></div></a>
+    <a class="item" href="https://play.google.com/store/apps/details?id=com.ovacorporation.hopaboo" target="_blank" rel="noopener"><img src="img/hopaboo-feature.jpg" alt="Hopaboo: Bunny Runner Dash" width="1024" height="500" loading="lazy"><div><h3>Hopaboo: Bunny Runner Dash</h3><p>2D arcade runner · Android</p></div></a>
+  </div>
+</section>
+
+<section id="process" class="section">
+  <p class="eyebrow">How we work</p>
+  <h2>From idea to launch</h2>
+  <ol class="steps">
+    <li><b>01</b><h3>Idea</h3><p>We shape the concept, the audience and the goals together.</p></li>
+    <li><b>02</b><h3>Prototype</h3><p>A playable or clickable version, fast, to test what works.</p></li>
+    <li><b>03</b><h3>Build</h3><p>Clean code, careful design, real‑device testing.</p></li>
+    <li><b>04</b><h3>Launch &amp; grow</h3><p>Store release, analytics and continuous updates.</p></li>
+  </ol>
+  <ul class="tech" aria-label="Technologies"><li>Godot</li><li>GDScript</li><li>Android</li><li>Java / Kotlin</li><li>Blender</li><li>HTML / CSS / JS</li><li>AdMob</li><li>Google Play</li></ul>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Have an idea? Let’s build it.</h2>
+  <p>Tell us about your project and we’ll get back to you.</p>
+  <a class="cta" href="mailto:robert.ovadiuc2@gmail.com">Get in touch</a>
+</section>
+
+<footer class="foot">
+  <div class="fb">Ova Corporation</div>
+  <div class="fl"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="#contact">Contact</a></div>
+  <p>© 2026 Ova Corporation. All rights reserved.</p>
 </footer>
 </body>
 </html>
